@@ -15,7 +15,7 @@ PiRAva.Cloud is a simple and intuitive file sharing system based on source code 
 - **Front-end**: HTML, CSS, jQuery, Dropzone.js.
 - **Back-end**: PHP.
 - **Storage**: Wasabi Cloud (S3).
-- **SDK**: AWS SDK for PHP.
+- **SDK**: [AWS SDK for PHP](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar).
 
 ## Future Enhancements
 
