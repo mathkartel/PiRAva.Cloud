@@ -4,11 +4,12 @@ PiRAva.Cloud is a simple and intuitive file sharing system based on source code 
 
 ## Main Features
 
-- **File Upload**: Allows users to upload files to the system.
-- **File Download**: Allows users to download previously uploaded files.
-- **Integration with Wasabi Cloud**: Uses Wasabi Cloud as an S3 storage for upload and download operations, providing robustness and simplicity.
-- **Unique Download Hash**: Each uploaded file receives a unique hash that is used to facilitate downloading later.
-- **AWS SDK**: Utilizes AWS SDK for PHP (`aws.phar`) for communication with Wasabi Cloud.
+- **File Upload**: PiRAva.Cloud allows users to easily upload files to the system. Upon upload, each file is encrypted using the AES-256 encryption algorithm, ensuring data security during storage and transfer.
+- **File Download**: Users can download their uploaded files securely. During the download process, the encrypted files are decrypted using AES-256, ensuring that only authorized users can access the original content.
+- **Integration with Wasabi Cloud**: PiRAva.Cloud seamlessly integrates with Wasabi Cloud, a reliable and scalable S3 storage solution. This integration provides robustness and scalability to the file storage and retrieval process.
+- **Unique Download Hash**: Each uploaded file receives a unique hash, generated based on the file's name and extension. This unique hash serves as a download code, making it easy for users to retrieve their files securely.
+- **AES-256 Encryption**: The encryption key used for AES-256 encryption is generated using the HMAC-SHA256 algorithm. This key generation process ensures that each file has a unique and secure encryption key, enhancing data security.
+- **AWS SDK**: PiRAva.Cloud utilizes the AWS SDK for PHP (`aws.phar`) to communicate with Wasabi Cloud. This SDK simplifies the integration process and provides access to a wide range of AWS services, enhancing the functionality and reliability of PiRAva.Cloud.
 
 ## Technologies Used
 
