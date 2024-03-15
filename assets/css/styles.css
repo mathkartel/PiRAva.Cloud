@@ -1,0 +1,178 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.ad-top,
+.ad-bottom {
+  max-width: 800px;
+  max-height: 80px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.ad-top {
+  margin-bottom: 30px; /* Espaçamento maior entre o anúncio superior e o contêiner */
+}
+
+.ad-bottom {
+  margin-top: 30px; /* Espaçamento maior entre o contêiner e o anúncio inferior */
+}
+
+h1 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="submit"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+  animation: fadeIn 1s ease-out;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.file-info {
+  margin: 10px;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+.file-code-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: slideIn 0.5s ease-out;
+}
+
+.file-code-container:hover {
+  background-color: #f0f0f0;
+}
+
+.file-code {
+  margin: 0 auto;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.error-notification {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-out;
+}
+.media-container {
+  margin-top: 20px;
+}
+.download-btn {
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(
+      -10px
+    ); /* Reduzindo a distância da animação de entrada */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
