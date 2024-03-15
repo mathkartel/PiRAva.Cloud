@@ -20,7 +20,7 @@ PiRAva.Cloud is a simple and intuitive file sharing system based on source code 
 ## Future Enhancements
 
 - **History System**: Implement a history system based on cookies so that users can access codes of previously uploaded files.
-- **File Sharing**: Improve the sharing functionality to make it more intuitive and user-friendly.
+- **Share Page**: Improve the sharing functionality to make it more intuitive and user-friendly.
 - **Separate Downloads Page**: Separate the downloads page to enhance user experience.
 
 ## How to Contribute
